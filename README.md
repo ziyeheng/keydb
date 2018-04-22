@@ -14,7 +14,7 @@ Keydb core performance?
 --------------
 
     value-length | value-count | gen-time | memory | disk | random-read | random-write
-    2k           |	209715200	|	32M			|27G		|	400G	|	4975		|	4361
+    2k           | 209715200   | 32M      | 27G    | 400G |	4975        | 4361
     20k				|	20971520	|	9M			|4G			|	400G	|	3211		|	3336
     200k			|	2097152		|	7M			|0.4G		|	400G	|	1123		|	1333
 
