@@ -12,10 +12,8 @@ Keydb is a fast key-value-store disk based storage service.
 Keydb core performance? 
 --------------
 
-value-length |	value-count	|	gen-time	|	memory	|	disk	|	random-read	|	random-write
+	数量	生成耗时	内存使用	硬盘使用	rand read	rand write
+2k	209715200	32M	27G	400G	4975	4361
+20k	20971520	9M	4G	400G	3211	3336
+200k	2097152	7M	0.4G	400G	1123	1333
 
-2k            |	209715200	  |	32M			  | 27G		  |	400G	|	4975		    |	4361
-
-20k				|	20971520	|	9M			|4G			|	400G	|	3211		|	3336
-
-200k			|	2097152		|	7M			|0.4G		|	400G	|	1123		|	1333
