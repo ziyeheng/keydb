@@ -1,0 +1,46 @@
+=================================
+2018/4/2
+
+1.hardnode string file -> unit32_t file_child_index to reduce memory
+
+2018/4/3
+
+1. std::tr1::unordered_map<uint32_t, std::map<std::string,hardnode> >
+map use 2G memory
+
+2018/4/13
+1.use list node(make by myself)
+
+2018/4/15
+1.delete all ptr[no test]
+2.put_key use deled_map
+3.dump file
+4.load file
+
+2018/4/17
+
+1.network
+2.client interface
+
+2018/4/18
+
+1.add log to record process time
+2.reuse it->recv_buff to get_key as memory
+3.fix a bug when get_key not set \0
+
+2018/4/20
+
+1.fix a http bug
+http.cpp:
+http_entity::parse_body
+body_map.insert ( std::pair<std::string,std::string>(key,value) );
+instead with 
+body_map[key] = value;
+
+2.fix a senddata bug
+when send data too big,EAGAIN need resent
+
+to do list:
+
+1.beautiful memory alloate and free
+2.one get or put value size <= 10M(10*1024*1024)
