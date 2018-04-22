@@ -20,3 +20,20 @@ Building Keydb?
 
     # cd src
     # make
+    
+Running Keydb? 
+--------------
+
+service sample as:
+
+    # cd service_example
+    # cp ../src/keydb ./
+    # nohup ./keydb ./conf/keydb.conf 1>/dev/null 2>&1 &
+    
+client sample as:
+
+    # cd client_example
+    # python client_put.py hello "world"
+    # python client_get.py hello
+    # python client_delete.py hello
+    # python client_dump.py
