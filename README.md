@@ -7,9 +7,6 @@ I want to use a big capacity databse like mysql,but it not designed to key-value
 
 Keydb is a fast key-value-store disk based storage service.
 
-
-
-
 Keydb core performance? 
 --------------
 
@@ -18,4 +15,8 @@ Keydb core performance?
     20K          | 20971520    | 9Min     | 4G     | 400G |	3211QPS     | 3336QPS
     200K         | 2097152     | 7Min     | 0.4G   | 400G |	1123QPS     | 1333QPS
 
-e
+Building Keydb? 
+--------------
+
+    # cd src
+    # make
